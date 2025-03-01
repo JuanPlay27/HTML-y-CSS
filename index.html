@@ -4,7 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pagina HTML y CSS</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Ejemplos de css en interno -->
+    <style>
+        .carousel {
+    width: 100%; /* Ocupará todo el ancho de la sección */
+    margin: auto; /* Centra el carrusel */
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 10px; /* Espacio entre imágenes */
+    }
+
+    /* Contenedor de las imágenes */
+    .carousel-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; 
+    }
+
+    /* Estilo de cada imagen */
+    .carousel-container img {
+        width: 100%; /* Cada imagen ocupara el 30% del ancho */
+        height: auto; /* Mantiene la proporcion */
+        object-fit: cover; /* Ajusta la imagen dentro del espacio */
+        border-radius: 5px; 
+    }
+    </style>
+
+
 </head>
 <body>
 
@@ -19,6 +50,8 @@
             <li><a href="#inicio">introduccion</a></li>
             <li><a href="#acerca">Acerca de</a></li>
             <li><a href="#informacionEstudiante">Informacion Academica de Juan Mendoza</a></li>
+            <li><a href="#galeria">Dibujos</a></li>
+
         </ul>
     </nav>
 
@@ -54,9 +87,24 @@
         <img src="imagenPruebaJuan.jpg" alt="imagen de juan">
     </section>
 
-    <!-- Pie de pagina -->
+    <section id="galeria">
+        <h2>Tambien me gusta Dibujar</h2>
+        <div class="carousel">
+            <div class="carousel-container">
+
+                <!-- Ejemplos de css en linea -->
+                <img src="001.png" alt="Dibujo 1" style="width: 300px; height: 200px; border: 2px solid black;">
+                <img src="002copy.png" alt="Dibujo 2" style="width: 300px; height: 200px; border: 2px solid black;">
+                <img src="dibujoNavidadnatalan.jpg" alt="Dibujo 3" style="width: 300px; height: 200px; border: 2px solid black;">
+            </div>
+        </div>
+    </section>
+
+    
     <footer>
-        <p>&copy;Universidad Francisco de Paula Santander</p>
+        <a href="https://uvirtual.cloud.ufps.edu.co/" target="_blank">
+            <p>&copy; Universidad Francisco de Paula Santander</p>
+        </a>    
     </footer>
 
 </body>

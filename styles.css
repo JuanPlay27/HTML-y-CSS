@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(199, 226, 245); 
+    color: #333; 
+    margin: 20px;  /* Espacio externo  */
+    padding: 10px; /* Espacio interno */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #90caf9; /* Azul claro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #64b5f6; /* Azul intermedio */
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: "VT323", monospace; /* O la fuente que prefieras */
+    font-size: 20px;
+    
+    background-color: #576574; 
+    padding: 10px 15px; /* Espaciado interno para agrandar el cuadro */
+    border-radius: 50px; /* Bordes redondeados */
+    display: inline-block; /* Hace que cada enlace sea un cuadro */
+    transition: 0.3s; /* Suaviza el efecto al pasar el mouse */
+}
+
+nav ul li a:hover {
+    color: #b3b3b3; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Secciones generales */
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 10px;
+}
+
+/* Estilo de listas ordenadas */
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    width: max-content; /* para encerrar elementos sin perder la enumeracion */
+    background-color: #f0f0f0; /* Gris claro */
+    border: 1px solid #c2c1c1; /* Borde gris suave */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Espaciado entre elementos */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    list-style-position: inside; /* Hace que el número quede dentro del cuadro */
+}
+
+/* Enlaces */
+a {
+    color: #75929e; /* Azul medio */
+}
+
+a:hover {
+    color: #0d47a1; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Imágenes */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 4px rgba(117, 7, 7, 0.2);
+}
+
+/* Pie de página */
+footer {
+    background-color: #42a5f5; /* Azul más fuerte */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+footer p {
+    color: #d6d6d6; /* Color de texto gris oscuro */
+    text-align: center; /* Centrar el texto */
+    font-weight: bold; /* Hacerlo más grueso */
+    font-size: 25px; /* Tamaño del texto */
+    margin: 10px 0; /* Espaciado */
+    
+}
+
